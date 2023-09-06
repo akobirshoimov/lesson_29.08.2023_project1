@@ -5,16 +5,17 @@ class SchoolModels(models.Model):
     name = models.CharField(max_length=50,default='')
     number_of_students = models.IntegerField(default = ' ')
     number_of_teachers = models.IntegerField(default = ' ')
-    class Meta :
-        db_table = 'app1_school'
+    # class Meta :
+    #     db_table = 'app1_school'
+    # def __str__(self) -> str:
+    #     return self.name
     
 
 class University(models.Model):
     name = models.CharField(max_length=50,default=' ')
     number_of_students = models.IntegerField(default = 50)
     number_of_teachers = models.IntegerField(default = 5)
-    class Meta:
-        db_table = 'app1_university'
-
-
-
+    # class Meta:
+    #     db_table = 'app1_university'
+    # def __str__(self) -> str:
+    #     return self.name
